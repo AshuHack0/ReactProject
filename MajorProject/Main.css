@@ -1,0 +1,116 @@
+body{
+  background: url(back.png);
+  background-size: cover;
+  font-family: 'Trebuchet MS', sans-serif; 
+}
+.typed-out{
+  overflow: hidden;
+        border-right: .20rem solid orange;
+        border-radius: 2px;
+        white-space: nowrap;
+        animation: 
+          typing 4s steps(20, end) forwards,
+          blinking 1.2s infinite;
+        font-size: 2.5rem;
+        width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blinking {
+      from { border-color: transparent }
+      to { border-color: blue; }
+    }
+.navbar {
+    background-color: #fff !important;
+}
+.navbar-brand {
+    font-size:1.9rem ;
+    color: #565387;
+}
+.navbar a {
+    font-size: 1.3rem;
+    margin: 10px;
+    
+}
+.card img:hover {
+    transform: scale(1.1);
+    transition: 0.3s linear all;
+}
+.nav-link  
+{
+    color:skyblue
+}
+.navbar a:hover {
+    color:#3498db
+}
+/*ye active khud par khud aa jata react router main jab jo link active hota hai */
+.active {
+    border-bottom: 1px solid #565387;
+    font-weight:bold; 
+    color:#3498db
+}
+.hie {
+  height: 24rem !important;
+  width: 20rem !important;     
+}
+.navbar-nav {
+    margin-left: 50rem; 
+}
+@media(max-width:991px)
+{
+     .active {
+    border-bottom: none;
+    font-weight:bold; 
+}
+.navbar-nav {
+    margin-left:0px; 
+}
+
+.hie {
+  height: 25rem !important;
+  width: 18rem !important;
+  margin-left: -2rem;     
+}
+ }
+
+
+/*Animation laga raha */
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+/*Animation lagana khatm */
+/*Animation laga raha  card k liye*/
+.vaert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+.vaert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: movera 1s infinite  alternate;
+}
+@-webkit-keyframes movera {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-10px); }
+}
+@keyframes movera {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-10px); }
+}
+/*Animation lagana khatm */
+
+ 
